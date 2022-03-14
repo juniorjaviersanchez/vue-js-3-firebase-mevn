@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir hola mundo</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Vue 3</h1>
+        <h2>Imprimir un valor</h2>
+        <h5>{{title}}</h5>
+        <h6>Mi caldo disponible es: {{cantidad}}</h6>
+        <h2>Utilizando el atributo v-bind </h2>
+        <a v-bind:href="enlace">Forma 1</a>
+        <br>
+        <a :href="enlace">Forma 2</a>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+
+    <script>
+        const mountedApp = app.mount('#app');
+    </script>
+</body>
+</html>
